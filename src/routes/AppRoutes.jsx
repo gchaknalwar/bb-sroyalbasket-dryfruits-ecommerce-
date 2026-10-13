@@ -12,6 +12,8 @@ import NotFound from "../pages/NotFound";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 import Wholesale from "../pages/Wholesale";
+import ShippingPolicy from "../pages/ShippingPolicy";
+import FAQs from "../pages/FAQ's";
 
 export default function AppRoutes() {
   return (
@@ -30,6 +32,8 @@ export default function AppRoutes() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/faq" element={<FAQs />} />
+        <Route path="/shipping-policy" element={<ShippingPolicy />} />
       </Route>
     </Routes>
   );
